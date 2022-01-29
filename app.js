@@ -4,11 +4,12 @@ const game = {
   smallestNum: 1,
   secretNum: null,
   prevGuesses: [],
+  myGuess: [1,3],
   getGuess: function(){
-    while (this.prevGuesses = []) {
+    while (this.prevGuesses.length = null) {
     console.log( `Enter a guess between ${this.smallestNum} and ${this.biggestNum}`)
   } 
-  this.prevGuesses.push(this.getGuess())
+  this.prevGuesses.push(myGuess)
 }, 
   play: function() {
     this.secretNum = Math.floor(Math.random() * 
@@ -25,8 +26,6 @@ const game = {
     }
   }
 }
-
-game.getGuess()
 
 //figure out where guesses come from
 //
