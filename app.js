@@ -5,7 +5,7 @@ const game = {
   secretNum: null,
   prevGuesses: [],
   getGuess: function(){
-    while (this.prevGuesses !== this.secretNum)
+    while (this.prevGuesses = 0)
     return `Enter a guess between ${this.smallestNum} and ${this.biggestNum}`
   },
   play: function() {
