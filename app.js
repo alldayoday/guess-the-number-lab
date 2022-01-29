@@ -27,5 +27,4 @@ const game = {
   }
 }
 
-//figure out where guesses come from
-//
+
