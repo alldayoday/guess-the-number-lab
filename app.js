@@ -10,13 +10,12 @@ const game = {
     return this.secretNum
   },
   getGuess: function(){
-    while (this.prevGuesses === []) {
-    console.log( `Enter a guess between ${this.smallestNum} and ${this.biggestNum}`)
-    this.prevGuesses.push(myGuess)
+    while (this.prevGuesses.length === 0) {
+    return `Enter a guess between ${this.smallestNum} and ${this.biggestNum}`
     } 
   }, 
   render: function(){
-    while ((this.prevGuesses[prevGuesses.length -1]) !== this.secretNum)
+    while ((this.prevGuesses[this.prevGuesses.length -1]) !== this.secretNum)
     if (this.prevGuesses[this.prevGuesses.length-1] === this.secretNum) {
       return `Congrats! You guessed the number in ${this.prevGuesses.length} tries!`
     } else if (this.guess > this.secretNum) {
@@ -30,6 +29,11 @@ const game = {
 console.log(game.prevGuesses.length)
 
 console.log(game.play())
+
+console.log(game.render())
+
+console.log(game.getGuess())
+
 
 //added note
 //added another
