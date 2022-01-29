@@ -15,4 +15,4 @@ const game = {
 }
 
 
-console.log(game.getGuess())
+console.log(game.getGuess(1,2,3))
