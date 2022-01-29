@@ -4,9 +4,9 @@ const game = {
   smallestNum: 1,
   secretNum: null,
   prevGuesses: [],
-  myGuess: [1,3],
+  
   getGuess: function(){
-    while (this.prevGuesses.length = null) {
+    while (this.prevGuesses.length-1 === 0) {
     console.log( `Enter a guess between ${this.smallestNum} and ${this.biggestNum}`)
   } 
   this.prevGuesses.push(myGuess)
