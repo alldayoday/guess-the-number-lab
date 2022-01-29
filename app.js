@@ -1,20 +1,21 @@
 const game = {
   title: 'Guess the Number!',
-  guess: 1,
   biggestNum: 100,
   smallestNum: 1,
   secretNum: null,
-  prevGuesses: [''],
+  prevGuesses: [],
   getGuess: function(){
-    while (this.prevGuesses = ['']) {
-    return `Enter a guess between ${this.smallestNum} and ${this.biggestNum}`
-    } 
-  }, 
+    while (this.prevGuesses = []) {
+    console.log( `Enter a guess between ${this.smallestNum} and ${this.biggestNum}`)
+  } 
+  this.prevGuesses.push(this.getGuess())
+}, 
   play: function() {
     this.secretNum = Math.floor(Math.random() * 
       (this.biggestNum - this.smallestNum + 1)) + this.smallestNum
   },
   render: function(){
+    while (this.prevGuesses = [this.prevGuesses.length -1] !== this.secretNum)
     if (this.guess === this.secretNum) {
       return `Congrats! You guessed the number in ${this.prevGuesses.length}!`
     } else if (this.guess > this.secretNum) {
@@ -25,5 +26,7 @@ const game = {
   }
 }
 
+game.getGuess()
 
-console.log(game.play())
+//figure out where guesses come from
+//
