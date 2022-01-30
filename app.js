@@ -5,7 +5,7 @@ const game = {
   secretNum: null,
   prevGuesses: [],
 //added user guess to push from outside and play game
-  userGuess: null,
+  userGuess: [],
 //add a prevGuesses property to the game initialized to an empty array
 //From within the `play` method, invoke the `getGuess` method from inside a loop, and add the new guess to the `prevGuesses` array.
 //- Hint: this is an excellent use for a while loop (or even a do...while loop!)
@@ -21,7 +21,7 @@ const game = {
     // ***why is it not pushing userGuess to prevGuess**
   }, 
   play: function() {
-    while (this.prevGuesses.length === 0)  {
+    while (this.secretNum = [])  {
     this.secretNum = Math.floor(Math.random() * 
       (this.biggestNum - this.smallestNum + 1)) + this.smallestNum
       return this.secretNum
@@ -43,13 +43,14 @@ const game = {
     } }
   }
 }
+game.userGuess.push(13)
+game.userGuess.push(23)
+console.log(game.userGuess)
 
 console.log(game.play())
-
 console.log(game.getGuess())
-console.log(game.prevGuesses[1,2])
+console.log(game.prevGuesses)
 console.log(game.render())
 
 
-//added note
-//added another
+
